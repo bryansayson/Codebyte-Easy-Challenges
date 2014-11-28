@@ -1,0 +1,17 @@
+function LetterChanges(str) { 
+
+  // code goes here  
+  return str.replace(/[A-Za-z]/g,shiftchar).replace(/[aeiou]/g,upvowel); 
+         
+}
+
+function shiftchar(c) {
+  return String.fromCharCode(c.charCodeAt(0)+1).replace("[","A").replace("{","a");
+}
+
+function upvowel(v) {
+  return v.toUpperCase();
+}
+// keep this function call here 
+// to see how to enter arguments in JavaScript scroll down
+LetterChanges(readline());           
