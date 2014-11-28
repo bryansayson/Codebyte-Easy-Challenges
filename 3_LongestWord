@@ -1,0 +1,11 @@
+function LongestWord(sen) { 
+
+  var sentence = sen.split(" ") //split sentence by words//
+                    .sort(function (a,b) {return b.replace(/[^A-Za-z]/g, "").length - a.replace(/[^A-Za-z]/g, "").length}) //sort function / with replace characters//
+                    return sentence.shift();
+         
+}
+   
+// keep this function call here 
+// to see how to enter arguments in JavaScript scroll down
+LongestWord(readline());                            
