@@ -1,0 +1,15 @@
+function FirstFactorial(num) { 
+
+  if (num === 0) {
+    return 1; 
+    //we have to break out of the loop somehow. //
+  }
+  
+  num = num * FirstFactorial(num-1);
+  return num;
+  //recursion magic.//
+}
+
+// keep this function call here 
+// to see how to enter arguments in JavaScript scroll down
+FirstFactorial(readline());                            
